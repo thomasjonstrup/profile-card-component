@@ -1,5 +1,7 @@
 # Frontend Mentor - Profile card component
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a8fd9639-4e37-4a10-a87a-303ccd30f078/deploy-status)](https://app.netlify.com/sites/profile-card-component-tj/deploys)
+
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋

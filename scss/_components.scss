@@ -1,0 +1,106 @@
+/* Card */
+
+.card {
+	background-color: #fff;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	/* 	padding: 20px; */
+	margin: 10px;
+	width: 320px;
+
+	animation: slideInFromTop 500ms ease-in;
+
+	&__header {
+		background-image: url("../images/bg-pattern-card.svg");
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-height: 140px;
+	}
+
+	&__content {
+		padding: 4rem 2rem 2rem 2rem;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__location {
+		color: $dark-grayish-blue;
+		font-weight: 400;
+		font-size: 1.3rem;
+	}
+
+	&__description {
+		font-size: 1rem;
+		color: $dark-gray;
+	}
+
+	&__socials {
+		border-top: 1px solid #aaaaaa77;
+		padding: 1.25rem 3rem;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__social {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__image {
+		width: 8rem;
+		height: 8rem;
+
+		img {
+			border: 5px solid white;
+			border-radius: 50%;
+		}
+	}
+}
+
+/* Animation */
+@keyframes slideInFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
